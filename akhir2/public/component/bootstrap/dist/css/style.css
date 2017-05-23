@@ -1,0 +1,267 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://Alvarez.is
+ *
+ * Project Name: NYC Design
+ * Version: 1.0
+ * Date: 04-20-2014
+ * URL: 
+ */
+
+
+/* ==========================================================================
+   Base Styles, Bootstrap Modifications & Fonts Import
+   ========================================================================== */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+::-moz-selection {
+    background: #f2c2c9;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+::selection {
+    background: #16a085;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.centered {
+	text-align: center
+}
+
+.mt {
+	margin-top: 80px;
+}
+
+.mb {
+	margin-bottom: 80px;
+}
+
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 65px;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+    color: #4a4a4a;
+}
+
+
+.navbar-brand {
+	font-weight: 700;
+}
+
+.navbar-default .navbar-brand {
+	color: #1abc9c;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #1abc9c;
+	background-color: transparent;
+	border-bottom: 2px solid #1abc9c
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #1abc9c;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: white;
+}
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+
+
+#workwrap {	
+	background: url(../img/work.jpg) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#workwrap h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#workwrap h4 {
+	font-weight: 400;
+	color: #ffffff
+}
+
+#aboutwrap {	
+	background: url("component/1.jpg") no-repeat center top;
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 550px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+
+/* Gallery */
+.gallery {
+	margin-top: 30px;
+}
+
+.gallery img:hover {
+	opacity: 0.4;
+}
+
+/* Dropdown*/
+#navbar ul ul {
+  text-align: left;
+  background: #f2f2f2;
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  position: relative;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  display: block;
+  list-style: none;
+  margin: 0px;
+  padding: 0 !important;
+  min-width: 2=00px;
+  z-index: 20;
+}
+#navbar ul ul li {
+  min-height: 22px;
+  float: none;
+  position: relative;
+  margin: 0;
+}
+#navbar ul ul li a {
+  background-color: transparent;
+  box-shadow: none;
+  display: block;
+  padding: 6px 15px;
+  color: #555555 !important;
+  text-transform: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+#navbar ul ul li:first-child a {
+  border: none;
+}
+#navbar ul ul li a:active,
+#navbar ul ul li a:focus,
+#navbar ul ul li a:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+#navbar ul ul li:hover a {
+  text-decoration: none;
+}
+#navbar ul ul ul:before {
+  display: none;
+}
+#navbar li ul,
+#navbar li ul li ul {
+  position: absolute;
+  height: auto;
+  min-width: 130px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 240ms linear;
+  -o-transition: all 240ms linear;
+  -ms-transition: all 240ms linear;
+  -moz-transition: all 240ms linear;
+  -webkit-transition: all 240ms linear;
+  top: 115px;
+  z-index: 1000;
+}
+#navbar li:hover > ul,
+#navbar li ul li:hover > ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  top: 50px;
+}
+#navbar li ul li ul {
+  left: 220px;
+  top: 0;
+}
+#navbar li ul li:hover > ul {
+  top: 0px;
+  left: 200px;
+}
+#navbar ul ul {
+  top: 3px;
+  right: 15px;
+  color: #777;
+  font-size: 14px;
+  content: "\f105";
+  position: absolute;
+  font-weight: normal;
+  display: inline-block;
+  font-family: FontAwesome;
+}
